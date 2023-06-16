@@ -1,0 +1,110 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.modal-content {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+.label {
+  color: #999;
+}
+
+.form-group {
+  margin-bottom: 20px;
+
+  .MuiTextField-root {
+    width: 100%;
+  }
+}
+
+
+.modal-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group label {
+  text-align: center;
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.modal-buttons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+}
+
+.modal-close-button,
+.modal-submit-button {
+  padding: 10px 20px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.modal-close-button {
+  background-color: #ccc;
+}
+
+.modal-submit-button {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.modal-content .count-field {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.modal-content .count-field .count-buttons {
+  display: flex;
+  align-items: center;
+}
+
+.modal-content .count-field .count-buttons button {
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal-content .count-field .count-value {
+  margin: 0 10px;
+  font-size: 18px;
+}

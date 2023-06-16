@@ -1,0 +1,33 @@
+.modal-container {
+  .MuiTypography-root {
+    width: 100%;
+    text-align: center;
+  }
+
+  .MuiTextField-root {
+    margin-bottom: 10px;
+    width: 100%;
+
+    label.Mui-focused {
+      color: #000;
+    }
+    .MuiInput-underline:after {
+      border-bottom-color: #000;
+    }
+  }
+
+  .react-datepicker-popper {
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .MuiButton-root {
+    margin-top: 10px;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    &:hover {
+      background-color: #555;
+    }
+  }
+}

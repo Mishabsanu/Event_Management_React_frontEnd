@@ -1,0 +1,295 @@
+// .TableOne {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     padding: 16px;
+    
+//     .header {
+//       text-align: center;
+//       margin-bottom: 16px;
+      
+//       .title {
+//         font-size: 20px;
+//         font-weight: 600;
+//       }
+      
+//       .description {
+//         font-size: 14px;
+//         color: #666;
+//         margin-top: 8px;
+//       }
+//     }
+    
+//     .add-employee {
+//       text-align: center;
+//       margin-bottom: 16px;
+      
+//       .add-button {
+//         border: none;
+//         border-radius: 4px;
+//         background-color: #000;
+//         color: #fff;
+//         padding: 8px 16px;
+//         font-size: 14px;
+//         font-weight: 600;
+//         cursor: pointer;
+        
+//         &:hover {
+//           background-color: rgba(0, 0, 0, 0.8);
+//         }
+//       }
+//     }
+    
+//     .employee-table {
+//       overflow: auto;
+//       width: 100%;
+      
+//       .table {
+//         width: 100%;
+//         border-collapse: collapse;
+        
+//         th, td {
+//           padding: 8px 16px;
+//           text-align: left;
+//         }
+        
+//         th {
+//           background-color: #f2f2f2;
+//         }
+        
+//         tr:nth-child(even) {
+//           background-color: #f9f9f9;
+//         }
+        
+//         tr:hover {
+//           background-color: #eaeaea;
+//         }
+//       }
+      
+//       .employee-cell {
+//         display: flex;
+//         align-items: center;
+        
+//         .employee-info {
+//           display: flex;
+//           align-items: center;
+          
+//           .employee-image {
+//             width: 40px;
+//             height: 40px;
+//             border-radius: 50%;
+//             object-fit: cover;
+//             margin-right: 12px;
+//           }
+          
+//           .employee-details {
+//             display: flex;
+//             flex-direction: column;
+            
+//             .employee-name {
+//               font-weight: 600;
+//             }
+            
+//             .employee-email {
+//               color: #666;
+//               font-size: 14px;
+//             }
+//           }
+//         }
+//       }
+      
+//       .title-cell {
+//         .employee-title {
+//           font-weight: 600;
+//         }
+        
+//         .employee-department {
+//           color: #666;
+//           font-size: 14px;
+//         }
+//       }
+      
+//       .status-cell {
+//         .status {
+//           display: inline-block;
+//           border-radius: 4px;
+//           background-color: #c1e7d9;
+//           padding: 4px 8px;
+//           font-size: 12px;
+//           font-weight: 600;
+//           color: #155e49;
+//         }
+//         .pay-status {
+//           display: inline-block;
+//           border-radius: 4px;
+//           background-color: #d2c809;
+//           padding: 4px 8px;
+//           font-size: 12px;
+//           font-weight: 600;
+//           color: #0e1110;
+//         }
+//         .status-submit{
+//           display: inline-block;
+//           border-radius: 4px;
+//           background-color: #db7d12;
+//           padding: 4px 8px;
+//           font-size: 12px;
+//           font-weight: 600;
+//           color: #155e49;
+//           cursor: pointer;
+//         }
+//       }
+      
+//       .edit-cell {
+//         text-align: right;
+        
+//         .edit-link {
+//           color: #333;
+          
+//           &:hover {
+//             text-decoration: underline;
+//           }
+//         }
+//       }
+//     }
+//   }
+
+
+.booking-list-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 16px;
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 16px;
+    
+    &.title {
+      font-size: 20px;
+      font-weight: 600;
+    }
+    
+    &.description {
+      font-size: 14px;
+      color: #666;
+      margin-top: 8px;
+    }
+  }
+  
+  .pagination {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+    
+    button {
+      margin: 0 8px;
+      color:#957676;
+    }
+    
+    span {
+      margin: 0 16px;
+      font-size: 14px;
+    }
+  }
+  
+  .MuiTableContainer-root {
+    width: 100%;
+    
+    .MuiTable-root {
+      width: 100%;
+      border-collapse: collapse;
+      
+      th,
+      td {
+        padding: 8px 16px;
+        text-align: left;
+      }
+      
+      th {
+        background-color: #f2f2f2;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      
+      tr:hover {
+        background-color: #eaeaea;
+      }
+      
+      .status {
+        display: inline-block;
+        border-radius: 4px;
+        padding: 4px 8px;
+        font-size: 12px;
+        font-weight: 600;
+        color: #fff;
+        
+        &.pay-status {
+          background-color: #d2c809;
+        }
+        
+        &.status-submit {
+          background-color: #db7d12;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .MuiTableContainer-root {
+      overflow-x: auto;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1023px) { // iPad
+    padding: 12px;
+    
+    h2.title {
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    
+    h2.description {
+      font-size: 14px;
+      margin-top: 8px;
+    }
+    
+    .pagination {
+      margin-top: 12px;
+      
+      button {
+        margin: 0 6px;
+        color:#957676;
+      }
+      
+      span {
+        margin: 0 10px;
+        font-size: 14px;
+      }
+    }
+    
+    .MuiTableContainer-root {
+      .MuiTable-root {
+        th,
+        td {
+          padding: 6px 12px;
+          font-size: 14px;
+        }
+        
+        tr:nth-child(even),
+        tr:hover {
+          background-color: #f9f9f9;
+        }
+        
+        .status {
+          font-size: 12px;
+          padding: 4px 8px;
+        }
+      }
+    }
+  }
+
+}

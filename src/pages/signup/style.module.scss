@@ -1,0 +1,146 @@
+.signup_container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.signup_form_container {
+  width: 90%;
+  max-width: 900px;
+  height: 500px;
+  display: flex;
+  border-radius: 10px;
+  box-shadow: 0px 3px 3px -2px rgba(237, 228, 228, 0.949),
+    0px 3px 4px 0px rgba(247, 243, 243, 0.964), 0px 1px 8px 0px rgb(0 0 0 / 12%);
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  width: 300px;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #003580;
+}
+
+.left h1 {
+  margin-top: 0;
+  color: rgb(192, 184, 184);
+  font-size: 35px;
+  align-self: center;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #dee3fe;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: white;
+}
+
+.form_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+
+.form_container h1 {
+  font-size: 40px;
+  margin-top: 0;
+}
+
+.input {
+  outline: none;
+  border: none;
+  width: 100%;
+  max-width: 370px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #edf5f3;
+  margin: 5px 0;
+  color: #110f0f;
+  font-size: 14px;
+}
+
+.error_msg,
+.success_msg {
+  width: 100%;
+  max-width: 370px;
+  padding: 15px;
+  margin: 5px 0;
+  font-size: 14px;
+  background-color: #e9e9e9;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.success_msg {
+  background-color: #5cdd5c;
+}
+
+.white_btn,
+.green_btn {
+  border: none;
+  outline: none;
+  padding: 12px 0;
+  background-color: rgb(235, 235, 235);
+  border-radius: 20px;
+  width: 180px;
+  font-weight: bold;
+  font-size: 14px;
+  color: #050c78;
+  cursor: pointer;
+}
+
+.green_btn {
+  background-color: #053fed;
+  color: white;
+  margin: 10px;
+}
+
+.loginSpan {
+  display: none;
+}
+
+@media only screen and (max-width: 750px) {
+  .signup_form_container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .left {
+    width: 100%;
+    height: 300px;
+    border-bottom-left-radius: 0;
+  }
+
+  .right {
+    border-radius: 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .input {
+    width: 100%;
+  }
+
+  .white_btn,
+  .green_btn {
+    width: 100%;
+    margin: 5px 0;
+  }
+}

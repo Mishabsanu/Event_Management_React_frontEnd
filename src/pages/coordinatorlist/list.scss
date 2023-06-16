@@ -1,0 +1,97 @@
+$list-container-background-color: #ffffff;
+$list-result-background-color: #fff;
+$list-result-box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+// Define other variables as needed
+
+.listContainer {
+  background-color: $list-container-background-color;
+}
+
+.listResult {
+  background-color: $list-result-background-color;
+  box-shadow: $list-result-box-shadow;
+  // Apply other styles
+}
+
+.listContainer {
+  background-color: #f5f5f5;
+}
+
+.listWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.listResult {
+  width: 100%;
+  // max-width: 800px;
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0);
+  padding: 20px;
+
+  h3 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: rgba(1, 0, 0, 0.727);
+  }
+
+  .search-div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .headerSearchInput {
+      width: 200px;
+      height: 30px;
+      margin-right: 10px;
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+    }
+
+    .search-icon {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .sort-container {
+      display: flex;
+      align-items: center;
+      margin-left: auto;
+      label {
+        font-size: 14px;
+        margin-right: 10px;
+      }
+      cursor: pointer;
+    }
+  }
+}
+
+.breadcrumb {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.pagination {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+
+  button {
+    margin: 0 5px;
+    background-color: #070000;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none; /* Add this line to remove the outline */
+
+    &:hover {
+      background-color: #f5f5f5;
+    }
+  }
+}

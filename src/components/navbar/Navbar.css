@@ -1,0 +1,53 @@
+/* Navbar.css */
+/* Example styles, modify as needed */
+
+.sticky {
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.1);
+  }
+  
+  .bg-white {
+    background-color: #ffffff;
+  }
+  
+  .inline-flex {
+    display: inline-flex;
+  }
+  
+  .items-center {
+    align-items: center;
+  }
+  
+  .space-x-2 > * + * {
+    margin-left: 0.5rem;
+  }
+  
+  .font-bold {
+    font-weight: bold;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .block {
+    display: block;
+  }
+  
+  .hidden,
+  .hidden > * {
+    display: none !important;
+  }
+  
+  .lg\:block {
+    display: none;
+  }
+  
+  .lg\:hidden {
+    display: block !important;
+  }
+  
+  /* ... Add more styles as needed */
+  
